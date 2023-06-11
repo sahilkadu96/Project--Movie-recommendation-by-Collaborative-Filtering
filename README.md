@@ -1,2 +1,2 @@
 # Project--Movie-recommendation-by-Collaborative-Filtering
-by KNN. Flask. FastAPI
+by KNN. Flask. FastAPI. Streamlit
