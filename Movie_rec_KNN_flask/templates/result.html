@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>List of Movies recommended for {{movie_name}}</h1>
+<h2>Lower the euclidean distance, the better the recommendation</h2>
+<div>
+    <table class="table table-striped-columns">
+        <tr class="table-primary">
+            <th>Movie name</th>
+            <th> Eucldean distance</th>  
+        </tr>
+        {% for m in res %}
+            <tr class="table-light">
+            <td> {{m}} </td>
+            <td>{{res[m]}}</td>
+            </tr>
+        {% endfor %}
+       
+    </table>
+</div>
+{% endblock %}

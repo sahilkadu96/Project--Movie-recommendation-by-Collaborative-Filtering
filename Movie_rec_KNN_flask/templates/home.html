@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Movies recommend</h1>
+<div class = 'container'>
+    <form method="POST">
+        {{form.hidden_tag()}}
+        {{form.movie_name.label}}{{form.movie_name}}
+        <br>
+        {{form.number.label}}{{form.number}}
+        <br>
+        {{form.submit()}}
+    </form>
+</div>
+{% endblock %}
